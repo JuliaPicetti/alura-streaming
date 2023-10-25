@@ -1,0 +1,155 @@
+:root {
+    --principal-letra: #FFFFFF;
+    --secundário: #C0C0C0;
+    --tercearia-botao: #167BF7;
+    --fundo: #00030C;
+    --fonte-principal: 'Inter';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--fundo);
+    color: var(--principal-letra);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+ 
+/*Seção principal*/
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45% 55%; /*separa a tela em bolocos, no caso do 50/50 em duas partes iguais, em 3 seria 33/33/33*/
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__img {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    text-decoration: none;
+    background-color: var(--tercearia-botao);
+    border-radius: 8px;
+    padding: 1em;
+    gap: 1em;
+    color: var(--principal-letra);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--principal-letra);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--secundário);
+}
+
+.container__caixa {
+     margin: 0 6em;
+}
+
+/*Segunda parte*/
+
+.secundario__img {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.3em;
+}
+
+.descricao__texto {
+    color: var(--secundário);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+/*Parte dos dispositivos*/
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--principal-letra);
+}
+
+.dispositivos_item {
+    font-size: 32px;
+    color: var(--principal-letra);
+}
+
+/*Rodapé*/
+
+.rodape {
+    padding-top: 5em;
+}
+
+.rodape__logo {
+    margin: auto;
+    display: block;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1em;
+    margin: 1.5em 0;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--principal-letra);
+    font-size: 16px;
+}
+
+.rodape__texto {
+    text-align: center;
+    margin: 1.5em 0;
+    color: var(--secundário);
+    font-size: 14px;
+}
